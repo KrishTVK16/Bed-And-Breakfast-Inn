@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guests - InnKeeper</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/vars.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body class="admin-mode">
+
+    <div class="admin-layout">
+        <!-- SIDEBAR -->
+        <aside class="admin-sidebar" id="admin-sidebar">
+            <div class="admin-logo">
+                <span>InnKeeper</span>
+            </div>
+
+            <nav class="admin-nav">
+                <a href="index.html" class="admin-nav-link">
+                    <span>Dashboard</span>
+                </a>
+                <a href="reservations.html" class="admin-nav-link">
+                    <span>Reservations</span>
+                </a>
+                <a href="calendar.html" class="admin-nav-link">
+                    <span>Calendar</span>
+                </a>
+                <a href="rooms.html" class="admin-nav-link">
+                    <span>Rooms</span>
+                </a>
+                <a href="guests.html" class="admin-nav-link active">
+                    <span>Guests</span>
+                </a>
+                <a href="settings.html" class="admin-nav-link">
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="user-profile">
+                <div class="avatar" style="width:32px;height:32px;background:var(--color-secondary);border-radius:50%;">
+                </div>
+                <div class="user-info">
+                    <div style="font-size:0.8rem;font-weight:600;">Admin User</div>
+                    <div style="font-size:0.7rem;opacity:0.7;">Manager</div>
+                </div>
+                <a href="../index.html"
+                    style="margin-left:auto; font-size:0.75rem; color:var(--color-secondary); opacity:0.8;">Exit</a>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="admin-main">
+            <header class="admin-header">
+                <h2>Guest Directory</h2>
+                <div class="actions">
+                    <button class="btn btn-secondary btn-sm" id="admin-menu-toggle">Menu</button>
+                    <input type="text" placeholder="Search guests..."
+                        style="padding: 0.5rem; border-radius: var(--radius-sm); border: 1px solid #ddd;">
+                </div>
+            </header>
+
+            <div class="container" style="padding: 0;">
+                <div class="card"
+                    style="background: white; border-radius: var(--radius-md); border: 1px solid rgba(0,0,0,0.1); overflow: hidden;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead style="background: var(--color-bg-alt); border-bottom: 1px solid rgba(0,0,0,0.1);">
+                            <tr>
+                                <th style="padding: 1rem; text-align: left;">Name</th>
+                                <th style="padding: 1rem; text-align: left;">Contact</th>
+                                <th style="padding: 1rem; text-align: left;">Last Stay</th>
+                                <th style="padding: 1rem; text-align: right;">Total Stays</th>
+                                <th style="padding: 1rem; text-align: right;">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid rgba(0,0,0,0.05);">
+                                <td style="padding: 1rem;"><strong>Sarah Smith</strong></td>
+                                <td style="padding: 1rem;">sarah@example.com<br><small style="opacity:0.7">+1 (555)
+                                        123-4567</small></td>
+                                <td style="padding: 1rem;">Jan 25, 2026</td>
+                                <td style="padding: 1rem; text-align: right;">3</td>
+                                <td style="padding: 1rem; text-align: right;"><button
+                                        class="btn btn-secondary btn-sm">Profile</button></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(0,0,0,0.05);">
+                                <td style="padding: 1rem;"><strong>Michael Johnson</strong></td>
+                                <td style="padding: 1rem;">mike.j@example.com<br><small style="opacity:0.7">+1 (555)
+                                        987-6543</small></td>
+                                <td style="padding: 1rem;">Jan 27, 2026</td>
+                                <td style="padding: 1rem; text-align: right;">1</td>
+                                <td style="padding: 1rem; text-align: right;"><button
+                                        class="btn btn-secondary btn-sm">Profile</button></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem;"><strong>Emma Wilson</strong></td>
+                                <td style="padding: 1rem;">emma.w@example.com<br><small style="opacity:0.7">+1 (555)
+                                        456-7890</small></td>
+                                <td style="padding: 1rem;">Dec 15, 2025</td>
+                                <td style="padding: 1rem; text-align: right;">5</td>
+                                <td style="padding: 1rem; text-align: right;"><button
+                                        class="btn btn-secondary btn-sm">Profile</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

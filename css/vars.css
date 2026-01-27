@@ -1,0 +1,70 @@
+:root {
+  /* STRICT COLOR SYSTEM */
+  /* Primary: Deep Forest Green */
+  --color-primary: #2F4F4F;
+  --color-primary-light: #3A6161; /* For hover states or lighter variations */
+  --color-primary-dark: #243D3D;
+
+  /* Secondary: Warm Sand */
+  --color-secondary: #E6DCCF;
+  --color-secondary-light: #F5F0EB; /* Admin Background */
+  --color-secondary-dark: #D1C4B5;
+
+  /* Accent: Muted Gold (Only for highlights) */
+  --color-accent: #C2A55F;
+  --color-accent-hover: #D4B870;
+
+  /* Semantic Colors */
+  --color-text-body: var(--color-primary);
+  --color-text-heading: var(--color-primary);
+  --color-bg-body: var(--color-secondary);
+  --color-bg-admin: var(--color-secondary-light);
+
+  /* Status Colors */
+  --color-status-ready: #4A7A7A; /* Light Forest Green */
+  --color-status-occupied: var(--color-primary);
+  --color-status-cleaning: var(--color-secondary-dark);
+  --color-status-reserved: var(--color-secondary); /* Needs border */
+  --color-status-maintenance: #B0B0B0; /* Greyed Sand replacement */
+
+  /* TYPOGRAPHY */
+  --font-family-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-family-serif: 'Playfair Display', serif; /* For Guest Headings */
+  
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 3rem;
+
+  /* SPACING - "Breathing UI" */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
+  --spacing-xl: 4rem;
+  --spacing-2xl: 6rem;
+
+  /* BORDERS & RADIUS */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* SHADOWS (Subtle for premium feel) */
+  --shadow-card: 0 4px 20px rgba(47, 79, 79, 0.08);
+  --shadow-hover: 0 10px 30px rgba(47, 79, 79, 0.12);
+}
+
+[data-theme='dark'] {
+  /* Dark Mode Adjustments */
+  /* Main background becomes Dark Green */
+  --color-bg-body: var(--color-primary-dark);
+  --color-text-body: var(--color-secondary);
+  --color-text-heading: var(--color-secondary);
+  
+  /* Cards become slightly lighter green */
+  --color-secondary-light: #2A4646; 
+}

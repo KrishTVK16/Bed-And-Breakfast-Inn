@@ -1,0 +1,96 @@
+@import './reset.css';
+@import './vars.css';
+@import './public.css';
+@import './admin.css';
+
+/* BASE STYLES */
+body {
+    font-family: var(--font-family-sans);
+    background-color: var(--color-bg-body);
+    color: var(--color-text-body);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-serif);
+    color: var(--color-text-heading);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* UTILITIES */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    font-family: var(--font-family-sans);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(47, 79, 79, 0.05);
+}
+
+/* Dark mode adjustments for buttons */
+[data-theme='dark'] .btn-primary {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+[data-theme='dark'] .btn-secondary {
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+/* RESPONSIVE UTILITIES */
+@media (max-width: 768px) {
+    .hidden-on-mobile {
+        display: none !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .hidden-on-desktop {
+        display: none !important;
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - InnKeeper</title>
+
+    <!-- CSS Links (Relative paths adjusted) -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/vars.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body class="admin-mode">
+
+    <div class="admin-layout">
+        <!-- SIDEBAR -->
+        <aside class="admin-sidebar" id="admin-sidebar">
+            <div class="admin-logo">
+                <span>InnKeeper</span>
+            </div>
+
+            <nav class="admin-nav">
+                <a href="index.html" class="admin-nav-link active">
+                    <span>Dashboard</span>
+                </a>
+                <a href="reservations.html" class="admin-nav-link">
+                    <span>Reservations</span>
+                </a>
+                <a href="calendar.html" class="admin-nav-link">
+                    <span>Calendar</span>
+                </a>
+                <a href="rooms.html" class="admin-nav-link">
+                    <span>Rooms</span>
+                </a>
+                <a href="guests.html" class="admin-nav-link">
+                    <span>Guests</span>
+                </a>
+                <a href="settings.html" class="admin-nav-link">
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="user-profile">
+                <div class="avatar" style="width:32px;height:32px;background:var(--color-secondary);border-radius:50%;">
+                </div>
+                <div class="user-info">
+                    <div style="font-size:0.8rem;font-weight:600;">Admin User</div>
+                    <div style="font-size:0.7rem;opacity:0.7;">Manager</div>
+                </div>
+                <a href="../index.html"
+                    style="margin-left:auto; font-size:0.75rem; color:var(--color-secondary); opacity:0.8;">Exit</a>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="admin-main">
+            <header class="admin-header">
+                <h2>Dashboard</h2>
+                <div class="actions">
+                    <button class="btn btn-secondary btn-sm" id="admin-menu-toggle">Menu</button>
+                    <button class="btn btn-primary btn-sm">New Booking</button>
+                </div>
+            </header>
+
+            <!-- DASHBOARD CONTENT -->
+            <div class="dashboard-grid">
+                <div class="stat-card">
+                    <div class="stat-title">Arrivals Today</div>
+                    <div class="stat-value">3</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">Departures</div>
+                    <div class="stat-value">2</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">Occupancy</div>
+                    <div class="stat-value">75%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">Cleaning</div>
+                    <div class="stat-value">2 Rooms</div>
+                </div>
+            </div>
+
+            <div class="timeline-section">
+                <div class="timeline-header">
+                    <h3>Activity Timeline</h3>
+                    <div class="controls">
+                        <button class="btn btn-secondary btn-sm">Today</button>
+                    </div>
+                </div>
+
+                <div class="timeline-track">
+                    <div class="timeline-column">
+                        <div class="timeline-col-header">Yesterday</div>
+                        <div class="timeline-card status-reserved">
+                            <strong>Smith</strong> - Room 101<br>
+                            <small>Checkout completed</small>
+                        </div>
+                    </div>
+
+                    <div class="timeline-column">
+                        <div class="timeline-col-header"
+                            style="color:var(--color-primary);border-color:var(--color-primary);">Today</div>
+                        <div class="timeline-card status-cleaning">
+                            <strong>Room 102</strong><br>
+                            <small>Needs Cleaning</small>
+                        </div>
+                        <div class="timeline-card status-ready">
+                            <strong>Johnson</strong> - Room 104<br>
+                            <small>Check-in @ 3pm</small>
+                        </div>
+                    </div>
+
+                    <div class="timeline-column">
+                        <div class="timeline-col-header">Tomorrow</div>
+                        <div class="timeline-card status-occupied">
+                            <strong>Johnson</strong> - Room 104<br>
+                            <small>Occupied</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- JS -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

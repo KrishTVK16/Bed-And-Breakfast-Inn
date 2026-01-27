@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Management - InnKeeper</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/vars.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body class="admin-mode">
+
+    <div class="admin-layout">
+        <!-- SIDEBAR -->
+        <aside class="admin-sidebar" id="admin-sidebar">
+            <div class="admin-logo">
+                <span>InnKeeper</span>
+            </div>
+
+            <nav class="admin-nav">
+                <a href="index.html" class="admin-nav-link">
+                    <span>Dashboard</span>
+                </a>
+                <a href="reservations.html" class="admin-nav-link">
+                    <span>Reservations</span>
+                </a>
+                <a href="calendar.html" class="admin-nav-link">
+                    <span>Calendar</span>
+                </a>
+                <a href="rooms.html" class="admin-nav-link active">
+                    <span>Rooms</span>
+                </a>
+                <a href="guests.html" class="admin-nav-link">
+                    <span>Guests</span>
+                </a>
+                <a href="settings.html" class="admin-nav-link">
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="user-profile">
+                <div class="avatar" style="width:32px;height:32px;background:var(--color-secondary);border-radius:50%;">
+                </div>
+                <div class="user-info">
+                    <div style="font-size:0.8rem;font-weight:600;">Admin User</div>
+                    <div style="font-size:0.7rem;opacity:0.7;">Manager</div>
+                </div>
+                <a href="../index.html"
+                    style="margin-left:auto; font-size:0.75rem; color:var(--color-secondary); opacity:0.8;">Exit</a>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="admin-main">
+            <header class="admin-header">
+                <h2>Room Management</h2>
+                <div class="actions">
+                    <button class="btn btn-secondary btn-sm" id="admin-menu-toggle">Menu</button>
+                    <button class="btn btn-secondary btn-sm">Maintenance Log</button>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <!-- Room Card 1 -->
+                <div class="stat-card" style="border-left: 5px solid var(--color-status-ready); padding: 1.5rem;">
+                    <div style="display:flex; justify-content:space-between; align-items:start;">
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem;">Forest Suite (101)</h3>
+                            <div style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 1rem;">Occupied by Smith</div>
+                            <span
+                                style="background: var(--color-status-occupied); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Occupied</span>
+                        </div>
+                        <div style="text-align: right;">
+                            <button class="btn btn-secondary btn-sm" style="font-size: 0.8rem;">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 2 -->
+                <div class="stat-card" style="border-left: 5px solid var(--color-status-cleaning); padding: 1.5rem;">
+                    <div style="display:flex; justify-content:space-between; align-items:start;">
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem;">Room 102</h3>
+                            <div style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 1rem;">Vacant</div>
+                            <span
+                                style="background: var(--color-status-cleaning); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Dirty</span>
+                        </div>
+                        <div style="text-align: right;">
+                            <button class="btn btn-primary btn-sm" style="font-size: 0.8rem;">Mark Clean</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 3 -->
+                <div class="stat-card" style="border-left: 5px solid var(--color-status-ready); padding: 1.5rem;">
+                    <div style="display:flex; justify-content:space-between; align-items:start;">
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem;">Room 103</h3>
+                            <div style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 1rem;">Vacant</div>
+                            <span
+                                style="background: var(--color-status-ready); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Ready</span>
+                        </div>
+                        <div style="text-align: right;">
+                            <button class="btn btn-secondary btn-sm" style="font-size: 0.8rem;">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 4 -->
+                <div class="stat-card" style="border-left: 5px solid var(--color-status-occupied); padding: 1.5rem;">
+                    <div style="display:flex; justify-content:space-between; align-items:start;">
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem;">Sand Loft (104)</h3>
+                            <div style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 1rem;">Occupied by Johnson</div>
+                            <span
+                                style="background: var(--color-status-occupied); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Occupied</span>
+                        </div>
+                        <div style="text-align: right;">
+                            <button class="btn btn-secondary btn-sm" style="font-size: 0.8rem;">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

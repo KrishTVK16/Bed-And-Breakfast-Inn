@@ -2,12 +2,14 @@
   /* STRICT COLOR SYSTEM */
   /* Primary: Deep Forest Green */
   --color-primary: #2F4F4F;
-  --color-primary-light: #3A6161; /* For hover states or lighter variations */
+  --color-primary-light: #3A6161;
+  /* For hover states or lighter variations */
   --color-primary-dark: #243D3D;
 
   /* Secondary: Warm Sand */
   --color-secondary: #E6DCCF;
-  --color-secondary-light: #F5F0EB; /* Admin Background */
+  --color-secondary-light: #F5F0EB;
+  /* Admin Background */
   --color-secondary-dark: #D1C4B5;
 
   /* Accent: Muted Gold (Only for highlights) */
@@ -20,17 +22,29 @@
   --color-bg-body: var(--color-secondary);
   --color-bg-admin: var(--color-secondary-light);
 
+  /* Additional Semantic Variables for Theme Responsiveness */
+  --color-bg-card: #ffffff;
+  --color-border: rgba(47, 79, 79, 0.1);
+  --color-input-bg: #ffffff;
+  --color-input-text: var(--color-primary);
+
   /* Status Colors */
-  --color-status-ready: #4A7A7A; /* Light Forest Green */
+  --color-status-ready: #4A7A7A;
+  /* Light Forest Green */
   --color-status-occupied: var(--color-primary);
   --color-status-cleaning: var(--color-secondary-dark);
-  --color-status-reserved: var(--color-secondary); /* Needs border */
-  --color-status-maintenance: #B0B0B0; /* Greyed Sand replacement */
+  --color-status-reserved: var(--color-secondary);
+  /* Needs border */
+  --color-status-maintenance: #B0B0B0;
+  /* Greyed Sand replacement */
+  --color-status-pending: #f9a825;
+  --color-status-pending-bg: #fff8e1;
 
   /* TYPOGRAPHY */
   --font-family-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-family-serif: 'Playfair Display', serif; /* For Guest Headings */
-  
+  --font-family-serif: 'Playfair Display', serif;
+  /* For Guest Headings */
+
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-md: 1rem;
@@ -46,6 +60,7 @@
   --spacing-lg: 2.5rem;
   --spacing-xl: 4rem;
   --spacing-2xl: 6rem;
+  --spacing-3xl: 8rem;
 
   /* BORDERS & RADIUS */
   --radius-sm: 4px;
@@ -64,7 +79,13 @@
   --color-bg-body: var(--color-primary-dark);
   --color-text-body: var(--color-secondary);
   --color-text-heading: var(--color-secondary);
-  
+
   /* Cards become slightly lighter green */
-  --color-secondary-light: #2A4646; 
+  --color-secondary-light: #2A4646;
+  --color-bg-card: #3A6161;
+  --color-border: rgba(230, 220, 207, 0.2);
+  --color-input-bg: var(--color-primary-dark);
+  --color-input-text: var(--color-secondary);
+  --color-status-pending: #ffd54f;
+  --color-status-pending-bg: #4d3d19;
 }

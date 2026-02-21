@@ -1,5 +1,11 @@
 /* ADMIN PANEL STYLES */
 
+.site-logo {
+    height: 35px;
+    width: auto;
+    display: block;
+}
+
 .admin-layout {
     display: grid;
     grid-template-columns: 260px 1fr;
@@ -19,7 +25,7 @@
 }
 
 .admin-logo {
-    font-family: var(--font-family-serif);
+    font-family: var(--font-family-sans);
     font-size: var(--font-size-lg);
     margin-bottom: var(--spacing-lg);
     color: var(--color-secondary);
@@ -90,11 +96,11 @@
 }
 
 .stat-card {
-    background: white;
+    background: var(--color-bg-card);
     padding: var(--spacing-md);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-card);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--color-border);
 }
 
 [data-theme='dark'] .stat-card {
@@ -125,10 +131,11 @@
 
 /* Timeline View */
 .timeline-section {
-    background: white;
+    background: var(--color-bg-card);
     padding: var(--spacing-md);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-card);
+    border: 1px solid var(--color-border);
 }
 
 [data-theme='dark'] .timeline-section {
@@ -159,7 +166,7 @@
     font-weight: 600;
     margin-bottom: var(--spacing-sm);
     padding-bottom: var(--spacing-xs);
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid var(--color-border);
 }
 
 .timeline-card {

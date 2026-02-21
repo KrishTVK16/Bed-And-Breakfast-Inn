@@ -18,12 +18,8 @@
     <!-- HEADER -->
     <header class="public-header">
         <div class="container public-header-content">
-            <a href="index.html" class="brand-logo">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                        d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z" />
-                </svg>
-                Bed & Breakfast
+            <a href="index.html">
+                <img src="public/images/logo.svg" alt="Bed & Breakfast Inn Logo">
             </a>
             <div class="desktop-nav-area hidden-on-mobile">
                 <nav class="public-nav">
@@ -106,48 +102,101 @@
     </header>
 
     <main class="public-main container" style="padding: var(--spacing-xl) var(--spacing-md);">
-        <h1 style="text-align: center; margin-bottom: var(--spacing-lg);">Gallery</h1>
-        <div
-            style="display:grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: var(--spacing-md);">
-            <img src="public/images/gallery-1.jpg" alt="Gourmet Breakfast"
-                style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md);">
-            <img src="public/images/gallery-2.jpg" alt="Garden Path"
-                style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md);">
-            <img src="public/images/gallery-3.jpg" alt="Cozy Fireplace"
-                style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md);">
-            <img src="public/images/gallery-4.jpg" alt="Inn Exterior"
-                style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md);">
-            <img src="public/images/gallery-5.jpg" alt="Mirror Lake"
-                style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md);">
-            <img src="public/images/gallery-6.jpg" alt="Sand Loft View"
-                style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md);">
-        </div>
-        <!-- SECTION: VIDEO TOUR -->
-        <div style="margin: var(--spacing-2xl) 0;">
-            <h2 style="text-align: center; margin-bottom: var(--spacing-lg);">Virtual Tour</h2>
-            <div
-                style="background: black; height: 400px; display: flex; align-items: center; justify-content: center; color: white; border-radius: var(--radius-lg);">
-                <div style="text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">▶</div>
-                    <p>Walk through our gardens and suites</p>
+        <h1 class="page-title">Refined Gallery</h1>
+        <p class="section-subtitle">A glimpse into the soul of our Vermont retreat. Each corner tells a story of
+            timeless comfort.</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="public/images/historical-inn.jpg" alt="Inn Exterior">
+                <div class="gallery-overlay">
+                    <span>Our Historic Grounds</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="public/images/library-room.jpg" alt="The Library Room">
+                <div class="gallery-overlay">
+                    <span>Gathering Spaces</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="public/images/gallery-1.jpg" alt="Gourmet Breakfast">
+                <div class="gallery-overlay">
+                    <span>Farm-to-Table Dining</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="public/images/cider-mill.jpg" alt="The Cider Mill">
+                <div class="gallery-overlay">
+                    <span>Rustic Architecture</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="public/images/forest-suite.jpg" alt="Forest Suite Exterior">
+                <div class="gallery-overlay">
+                    <span>Woodland Sanctuary</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="public/images/gallery-2.jpg" alt="Garden Path">
+                <div class="gallery-overlay">
+                    <span>Heritage Gardens</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="public/images/mirror-lake.jpg" alt="Spring Morning at the Lake">
+                <div class="gallery-overlay">
+                    <span>Reflection & Stillness</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="public/images/hero-bg.jpg" alt="The Inn at Twilight">
+                <div class="gallery-overlay">
+                    <span>Evenings at the Inn</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="public/images/sand-loft.jpg" alt="Interiors of Sand Loft">
+                <div class="gallery-overlay">
+                    <span>Boutique Interiors</span>
                 </div>
             </div>
         </div>
 
-        <!-- SECTION: GUEST MOMENTS -->
-        <div style="margin-bottom: var(--spacing-xl);">
-            <h2 style="text-align: center; margin-bottom: var(--spacing-lg);">Guest Moments</h2>
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--spacing-xs);">
-                <img src="public/images/guest-1.jpg" alt="Guest Hiking"
-                    style="width: 100%; height: 150px; object-fit: cover;">
-                <img src="public/images/guest-2.jpg" alt="Guest Coffee"
-                    style="width: 100%; height: 150px; object-fit: cover;">
-                <img src="public/images/guest-3.jpg" alt="Guest Relaxing"
-                    style="width: 100%; height: 150px; object-fit: cover;">
-                <img src="public/images/guest-4.jpg" alt="Guest Market"
-                    style="width: 100%; height: 150px; object-fit: cover;">
+        <!-- SECTION: VIRTUAL TOUR (Unique Component) -->
+        <section class="virtual-tour-section">
+            <h2 class="section-title">Experience the Mood</h2>
+            <div class="tour-wrapper" style="background-image: url('public/images/hero-bg.jpg');">
+                <div class="tour-content">
+                    <div class="play-btn" aria-label="Play Virtual Tour">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 style="font-family: var(--font-luxury-serif); font-size: 2rem; margin-bottom: 0.5rem;">Cineamtic
+                        Virtual Tour</h3>
+                    <p style="opacity: 0.9; font-size: 1.1rem; letter-spacing: 1px;">Step inside our sanctuary from
+                        anywhere in the world</p>
+                </div>
             </div>
-            <p style="text-align: center; margin-top: 1rem; opacity: 0.7;">Tag us @BedAndBreakfastInn to be featured</p>
+        </section>
+
+        <!-- SECTION: GUEST MOMENTS -->
+        <div style="padding: var(--spacing-xl) 0 0;">
+            <h2 class="section-title">Guest Moments</h2>
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-sm);">
+                <img src="public/images/guest-1.jpg" alt="Guest Moments"
+                    style="width: 100%; height: 250px; object-fit: cover; border-radius: var(--radius-md);">
+                <img src="public/images/guest-2.jpg" alt="Guest Moments"
+                    style="width: 100%; height: 250px; object-fit: cover; border-radius: var(--radius-md);">
+                <img src="public/images/guest-3.jpg" alt="Guest Moments"
+                    style="width: 100%; height: 250px; object-fit: cover; border-radius: var(--radius-md);">
+                <img src="public/images/guest-4.jpg" alt="Guest Moments"
+                    style="width: 100%; height: 250px; object-fit: cover; border-radius: var(--radius-md);">
+            </div>
+            <p style="text-align: center; margin-top: 1.5rem; opacity: 0.7; font-style: italic;">Tag us
+                @BedAndBreakfastInn to be featured in our seasonal lookbook</p>
         </div>
     </main>
 
@@ -155,12 +204,8 @@
     <footer class="public-footer">
         <div class="container footer-content">
             <div class="footer-column brand-col">
-                <div class="footer-logo" style="display: flex; align-items: center; gap: var(--spacing-xs);">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z" />
-                    </svg>
-                    Bed & Breakfast
+                <div class="footer-logo">
+                    <img src="public/images/logo.svg" alt="Bed & Breakfast Inn Logo">
                 </div>
                 <p>A sanctuary of calm and comfort. Experience the boutique difference.</p>
             </div>

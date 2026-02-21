@@ -19,12 +19,8 @@
     <!-- HEADER -->
     <header class="public-header">
         <div class="container public-header-content">
-            <a href="index.html" class="brand-logo">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                        d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z" />
-                </svg>
-                Bed & Breakfast
+            <a href="index.html">
+                <img src="public/images/logo.svg" alt="Bed & Breakfast Inn Logo">
             </a>
 
             <div class="desktop-nav-area hidden-on-mobile">
@@ -117,7 +113,7 @@
 
         <!-- SECTION 1: HERO -->
         <section class="hero-section" style="text-align: center;">
-            <div class="container hero-content" style="align-items: center;">
+            <div class="container hero-content">
                 <h1>Escape to Serenity</h1>
                 <p class="hero-subtitle" style="margin: 0 auto var(--spacing-lg) auto;">A historic inn where luxury
                     meets nature. Experience our Deep Forest and Warm
@@ -134,15 +130,16 @@
         <!-- SECTION 2: INTRO -->
         <section class="container intro-section">
             <div class="intro-text">
-                <h2>Two Souls, One Experience</h2>
-                <p>Whether you seek the calm of the forest or the warmth of the sand, our inn provides a perfect
+                <h2 class="section-title">Two Souls, One Experience</h2>
+                <p class="section-subtitle">Whether you seek the calm of the forest or the warmth of the sand, our inn
+                    provides a perfect
                     sanctuary. Discover our carefully curated rooms and premium amenities.</p>
             </div>
         </section>
 
         <!-- SECTION 3: FEATURED ROOMS -->
         <section class="container featured-rooms">
-            <h3>Featured Rooms</h3>
+            <h3 class="section-title">Featured Rooms</h3>
             <div class="room-grid">
                 <!-- Room Card 1 -->
                 <div class="room-card">
@@ -178,21 +175,21 @@
             <h3 style="font-size: var(--font-size-2xl); margin-bottom: var(--spacing-lg);">Our Services</h3>
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-lg);">
                 <div
-                    style="padding: var(--spacing-md); background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-card);">
+                    style="padding: var(--spacing-md); background: var(--color-bg-card); border-radius: var(--radius-md); box-shadow: var(--shadow-card); border: 1px solid var(--color-border);">
                     <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">🍳</div>
                     <h4 style="margin-bottom: var(--spacing-xs);">Farm Breakfast</h4>
                     <p style="font-size: var(--font-size-sm); opacity: 0.8;">Locally sourced organic ingredients served
                         daily.</p>
                 </div>
                 <div
-                    style="padding: var(--spacing-md); background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-card);">
+                    style="padding: var(--spacing-md); background: var(--color-bg-card); border-radius: var(--radius-md); box-shadow: var(--shadow-card); border: 1px solid var(--color-border);">
                     <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">🌲</div>
                     <h4 style="margin-bottom: var(--spacing-xs);">Nature Trails</h4>
                     <p style="font-size: var(--font-size-sm); opacity: 0.8;">Private access to 50 acres of forest
                         walking paths.</p>
                 </div>
                 <div
-                    style="padding: var(--spacing-md); background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-card);">
+                    style="padding: var(--spacing-md); background: var(--color-bg-card); border-radius: var(--radius-md); box-shadow: var(--shadow-card); border: 1px solid var(--color-border);">
                     <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">💆</div>
                     <h4 style="margin-bottom: var(--spacing-xs);">In-Room Spa</h4>
                     <p style="font-size: var(--font-size-sm); opacity: 0.8;">Relaxing treatments within the comfort of
@@ -237,7 +234,7 @@
             <div
                 style="display: flex; gap: var(--spacing-md); overflow-x: auto; padding-bottom: 1rem; justify-content: center;">
                 <div
-                    style="min-width: 250px; background: white; border: 1px solid #ddd; border-radius: var(--radius-md); overflow: hidden;">
+                    style="min-width: 250px; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden;">
                     <img src="public/images/mirror-lake.jpg" alt="Mirror Lake"
                         style="width: 100%; height: 150px; object-fit: cover;">
                     <div style="padding: 1rem;">
@@ -246,7 +243,7 @@
                     </div>
                 </div>
                 <div
-                    style="min-width: 250px; background: white; border: 1px solid #ddd; border-radius: var(--radius-md); overflow: hidden;">
+                    style="min-width: 250px; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden;">
                     <img src="public/images/vintage-market.jpg" alt="Vintage Market"
                         style="width: 100%; height: 150px; object-fit: cover;">
                     <div style="padding: 1rem;">
@@ -255,7 +252,7 @@
                     </div>
                 </div>
                 <div
-                    style="min-width: 250px; background: white; border: 1px solid #ddd; border-radius: var(--radius-md); overflow: hidden;">
+                    style="min-width: 250px; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden;">
                     <img src="public/images/cider-mill.jpg" alt="Cider Mill"
                         style="width: 100%; height: 150px; object-fit: cover;">
                     <div style="padding: 1rem;">
@@ -268,9 +265,9 @@
 
         <!-- SECTION 8: INNKEEPER NOTE -->
         <section class="container" style="margin-bottom: var(--spacing-2xl); text-align: center;">
-            <div style="border-top: 1px solid #ddd; padding-top: var(--spacing-xl);">
+            <div style="border-top: 1px solid var(--color-border); padding-top: var(--spacing-xl);">
                 <p
-                    style="font-family: var(--font-family-serif); font-size: 1.2rem; font-style: italic; color: var(--color-primary); max-width: 600px; margin: 0 auto;">
+                    style="font-family: var(--font-family-serif); font-size: 1.2rem; font-style: italic; color: var(--color-text-body); max-width: 600px; margin: 0 auto;">
                     "We built this place not just as a hotel, but as a home. When you stay with us, you are family. We
                     can't wait to welcome you."
                 </p>
@@ -287,12 +284,8 @@
     <footer class="public-footer">
         <div class="container footer-content">
             <div class="footer-column brand-col">
-                <div class="footer-logo" style="display: flex; align-items: center; gap: var(--spacing-xs);">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z" />
-                    </svg>
-                    Bed & Breakfast
+                <div class="footer-logo">
+                    <img src="public/images/logo.svg" alt="Bed & Breakfast Inn Logo">
                 </div>
                 <p>A sanctuary of calm and comfort. Experience the boutique difference.</p>
             </div>

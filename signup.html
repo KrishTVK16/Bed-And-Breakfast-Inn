@@ -15,29 +15,19 @@
 
 <body class="public-mode">
 
-    <!-- HEADER -->
-    <header class="public-header">
-        <div class="container public-header-content">
-            <a href="index.html" class="brand-logo">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                        d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z" />
-                </svg>
-                Bed & Breakfast
-            </a>
-            <div class="header-actions">
-                <a href="index.html" class="btn btn-secondary btn-sm">Back to Home</a>
-            </div>
-        </div>
-    </header>
-
     <!-- MAIN CONTENT -->
-    <main class="public-main" style="display:flex; align-items:center; justify-content:center; min-height:80vh;">
+    <main class="public-main"
+        style="display:flex; align-items:center; justify-content:center; min-height:80vh; padding: var(--spacing-md);">
         <div class="container" style="max-width: 480px; width:100%;">
             <div class="auth-card"
                 style="background: var(--color-bg-body); padding: var(--spacing-lg); border-radius: var(--radius-lg); box-shadow: var(--shadow-card); text-align: center; border: 1px solid rgba(47,79,79,0.1);">
-                <h1 style="font-family: var(--font-family-serif); margin-bottom: var(--spacing-md);">Join Our Community
-                </h1>
+                <div style="margin-bottom: var(--spacing-md); display: flex; justify-content: center;">
+                    <a href="index.html">
+                        <img src="public/images/logo.svg" alt="Bed & Breakfast Inn Logo" style="height: 60px;">
+                    </a>
+                </div>
+                <h1 class="page-title">Join Our Community</h1>
+
                 <form style="display: flex; flex-direction: column; gap: var(--spacing-md); text-align: left;"
                     action="index.html">
                     <div>
@@ -45,23 +35,69 @@
                             style="display:block; margin-bottom:var(--spacing-xs); font-size:var(--font-size-sm); font-weight:500;">Full
                             Name</label>
                         <input type="text" placeholder="John Doe"
-                            style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: var(--radius-sm); background: var(--color-bg-body); color: var(--color-text-body);">
+                            style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-input-bg); color: var(--color-input-text);">
                     </div>
                     <div>
                         <label
                             style="display:block; margin-bottom:var(--spacing-xs); font-size:var(--font-size-sm); font-weight:500;">Email
                             Address</label>
                         <input type="email" placeholder="you@example.com"
-                            style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: var(--radius-sm); background: var(--color-bg-body); color: var(--color-text-body);">
+                            style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-input-bg); color: var(--color-input-text);">
                     </div>
                     <div>
                         <label
                             style="display:block; margin-bottom:var(--spacing-xs); font-size:var(--font-size-sm); font-weight:500;">Password</label>
                         <input type="password" placeholder="••••••••"
-                            style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: var(--radius-sm); background: var(--color-bg-body); color: var(--color-text-body);">
+                            style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-input-bg); color: var(--color-input-text);">
                     </div>
-                    <button type="submit" class="btn btn-primary" style="margin-top: var(--spacing-sm);">Sign
-                        Up</button>
+                    <div>
+                        <label
+                            style="display:block; margin-bottom:var(--spacing-xs); font-size:var(--font-size-sm); font-weight:500;">Confirm
+                            Password</label>
+                        <input type="password" placeholder="••••••••"
+                            style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-input-bg); color: var(--color-input-text);">
+                    </div>
+                    <button type="submit" class="btn btn-primary"
+                        style="margin-top: var(--spacing-sm); width: 100%;">Sign Up</button>
+
+                    <div style="display: flex; align-items: center; margin: var(--spacing-sm) 0;">
+                        <div style="flex: 1; height: 1px; background: var(--color-border);"></div>
+                        <span
+                            style="padding: 0 10px; font-size: var(--font-size-xs); color: var(--color-text-body); opacity: 0.6; text-transform: uppercase;">Or
+                            sign up with</span>
+                        <div style="flex: 1; height: 1px; background: var(--color-border);"></div>
+                    </div>
+
+                    <div class="social-auth-group">
+                        <button type="button" class="social-auth-btn" title="Google">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 12-4.53z"
+                                    fill="#EA4335" />
+                            </svg>
+                        </button>
+                        <button type="button" class="social-auth-btn" title="Facebook">
+                            <svg viewBox="0 0 24 24" fill="#1877F2">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="social-auth-btn" title="Twitter">
+                            <svg viewBox="0 0 24 24" fill="#1DA1F2">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </button>
+                    </div>
                 </form>
                 <p style="margin-top: var(--spacing-md); font-size: var(--font-size-sm); opacity: 0.8;">
                     Already have an account? <a href="login.html"

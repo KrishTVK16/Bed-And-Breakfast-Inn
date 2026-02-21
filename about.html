@@ -17,12 +17,8 @@
     <!-- HEADER -->
     <header class="public-header">
         <div class="container public-header-content">
-            <a href="index.html" class="brand-logo">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                        d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z" />
-                </svg>
-                Bed & Breakfast
+            <a href="index.html">
+                <img src="public/images/logo.svg" alt="Bed & Breakfast Inn Logo">
             </a>
             <div class="desktop-nav-area hidden-on-mobile">
                 <nav class="public-nav">
@@ -105,29 +101,30 @@
     </header>
 
     <main class="public-main container" style="padding: var(--spacing-xl) var(--spacing-md); max-width:800px;">
-        <h1 style="margin-bottom: var(--spacing-md);">About Our Inn</h1>
+        <h1 class="page-title">About Our Inn</h1>
         <p style="font-size: var(--font-size-lg); opacity:0.9; margin-bottom: var(--spacing-lg);">
             Founded in 1920, our Bed & Breakfast has been a sanctuary for travelers seeking the perfect balance between
             nature and luxury.
         </p>
         <img src="public/images/historical-inn.jpg" alt="Historical Inn Photo"
             style="margin: var(--spacing-xl) 0; width: 100%; height: 300px; object-fit: cover; border-radius: var(--radius-lg);">
+
         <h3>Our Story</h3>
         <p>
             It began with a simple idea: to create a place where time slows down. Over the decades, we have hosted
             thousands of guests, each adding their own story to our history.
         </p>
+
         <!-- SECTION: PHILOSOPHY -->
-        <div
-            style="margin: var(--spacing-2xl) 0; background: var(--color-secondary-light); padding: var(--spacing-xl); border-radius: var(--radius-lg);">
-            <h2 style="text-align: center; margin-bottom: var(--spacing-md);">Our Philosophy</h2>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg);">
-                <div>
+        <div style="margin: var(--spacing-2xl) 0;">
+            <h2 class="section-title">Our Philosophy</h2>
+            <div class="philosophy-grid">
+                <div class="about-card">
                     <h4 style="margin-bottom: 0.5rem;">Rooted in Community</h4>
                     <p style="opacity: 0.9; font-size: 0.95rem;">We believe in the power of local. From our soaps to our
                         sausages, everything is sourced from Vermont artisans and farmers.</p>
                 </div>
-                <div>
+                <div class="about-card">
                     <h4 style="margin-bottom: 0.5rem;">Stewardship</h4>
                     <p style="opacity: 0.9; font-size: 0.95rem;">Our property is 80% solar-powered, and we maintain a
                         zero-waste kitchen policy to protect the forest we call home.</p>
@@ -135,28 +132,38 @@
             </div>
         </div>
 
+        <!-- SECTION: THE PROMISE (NEW) -->
+        <section class="promise-section">
+            <div class="promise-content">
+                <h2 class="section-title" style="color: var(--color-secondary);">The Innkeeper's Promise</h2>
+                <p style="font-style: italic; font-size: 1.1rem; line-height: 1.6;">
+                    "We promise to provide not just a room, but an experience that nourishes your soul. Whether it's the
+                    morning mist over the lake or the warmth of a fresh-baked scone, every detail is a gift from our
+                    family to yours."
+                </p>
+                <div style="margin-top: var(--spacing-md); font-weight: 700; letter-spacing: 1px;">— The Vance Family
+                </div>
+            </div>
+        </section>
+
         <!-- SECTION: TEAM -->
         <div style="margin-bottom: var(--spacing-xl);">
-            <h2 style="text-align: center; margin-bottom: var(--spacing-lg);">Meet the Team</h2>
-            <div
-                style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-lg); text-align: center;">
-                <div>
-                    <img src="public/images/team-eleanor.jpg" alt="Eleanor Vance"
-                        style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; margin: 0 auto 1rem;">
+            <h2 class="section-title">Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-member-card">
+                    <img src="public/images/team-eleanor.jpg" alt="Eleanor Vance">
                     <strong>Eleanor Vance</strong>
                     <div style="font-size: 0.8rem; opacity: 0.7; text-transform: uppercase; margin-top: 0.25rem;">
                         Innkeeper</div>
                 </div>
-                <div>
-                    <img src="public/images/team-marcus.jpg" alt="Marcus Thorn"
-                        style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; margin: 0 auto 1rem;">
+                <div class="team-member-card">
+                    <img src="public/images/team-marcus.jpg" alt="Marcus Thorn">
                     <strong>Marcus Thorn</strong>
                     <div style="font-size: 0.8rem; opacity: 0.7; text-transform: uppercase; margin-top: 0.25rem;">Head
                         Chef</div>
                 </div>
-                <div>
-                    <img src="public/images/team-sarah.jpg" alt="Sarah Jenkins"
-                        style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; margin: 0 auto 1rem;">
+                <div class="team-member-card">
+                    <img src="public/images/team-sarah.jpg" alt="Sarah Jenkins">
                     <strong>Sarah Jenkins</strong>
                     <div style="font-size: 0.8rem; opacity: 0.7; text-transform: uppercase; margin-top: 0.25rem;">Guest
                         Concierge</div>
@@ -169,12 +176,8 @@
     <footer class="public-footer">
         <div class="container footer-content">
             <div class="footer-column brand-col">
-                <div class="footer-logo" style="display: flex; align-items: center; gap: var(--spacing-xs);">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z" />
-                    </svg>
-                    Bed & Breakfast
+                <div class="footer-logo">
+                    <img src="public/images/logo.svg" alt="Bed & Breakfast Inn Logo">
                 </div>
                 <p>A sanctuary of calm and comfort. Experience the boutique difference.</p>
             </div>

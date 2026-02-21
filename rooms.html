@@ -80,30 +80,36 @@
         <!-- Mobile Menu Overlay -->
         <div class="mobile-menu-overlay" id="mobile-menu">
             <div class="mobile-menu-header">
-                <span class="brand-logo">Menu</span>
-                <button class="close-menu btn btn-secondary">Close</button>
+                <a href="index.html" class="brand-logo">Menu</a>
+                <button class="close-menu btn btn-secondary btn-sm">Close</button>
             </div>
+
             <nav class="mobile-nav-links">
-                <div class="mobile-theme-wrapper">
-                    <button class="btn btn-secondary w-full mobile-theme-toggle">Switch Theme</button>
-                </div>
-                <a href="login.html" class="btn btn-secondary">Login</a>
-                <a href="signup.html" class="btn btn-primary">Sign Up</a>
-                <hr style="opacity:0.1; margin:1rem 0;">
-                <div style="text-align:left; padding-left:1rem; border-left:2px solid var(--color-primary);">
-                    <div style="font-size:0.8rem; text-transform:uppercase; margin-bottom:0.5rem; opacity:0.7;">Select
-                        Experience</div>
-                    <a href="index.html" class="nav-link"
-                        style="display:block; margin-bottom:0.5rem; font-weight:700;">Classic Home</a>
-                    <a href="index-2.html" class="nav-link" style="display:block;">Modern Home</a>
-                </div>
-                <hr style="opacity:0.1; margin:1rem 0;">
-                <a href="about.html" class="nav-link">About</a>
-                <a href="rooms.html" class="nav-link">Rooms</a>
+                <a href="about.html" class="nav-link">About the Inn</a>
+                <a href="rooms.html" class="nav-link">Our Rooms</a>
                 <a href="amenities.html" class="nav-link">Amenities</a>
                 <a href="gallery.html" class="nav-link">Gallery</a>
-                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
             </nav>
+
+            <div class="mobile-auth-section">
+                <a href="login.html" class="btn btn-secondary w-full">Login</a>
+                <a href="signup.html" class="btn btn-primary w-full">Sign Up</a>
+            </div>
+
+            <div class="mobile-settings-section">
+                <div class="mobile-experience-switcher">
+                    <span class="label">Choose Experience</span>
+                    <div class="mobile-experience-links">
+                        <a href="index.html">Classic</a>
+                        <a href="index-2.html">Modern</a>
+                    </div>
+                </div>
+                <div class="mobile-theme-rtl-bar">
+                    <button class="btn btn-secondary mobile-theme-toggle" aria-label="Toggle Theme">Theme</button>
+                    <button class="btn btn-secondary rtl-toggle-btn" aria-label="Toggle RTL">RTL</button>
+                </div>
+            </div>
         </div>
     </header>
 

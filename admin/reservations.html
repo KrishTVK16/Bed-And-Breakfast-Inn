@@ -62,19 +62,23 @@
         <!-- MAIN CONTENT -->
         <main class="admin-main">
             <header class="admin-header">
-                <a href="../index.html" class="admin-mobile-logo">
-                    <img src="../public/images/logo.svg" alt="Bed & Breakfast Inn Logo" style="height: 30px;">
-                </a>
-                <h2>Reservations</h2>
-                <div class="actions">
+                <div class="header-row top-row">
+                    <a href="../index.html" class="admin-mobile-logo">
+                        <img src="../public/images/logo.svg" alt="Bed & Breakfast Inn Logo" style="height: 30px;">
+                    </a>
                     <button class="btn btn-secondary btn-sm" id="sidebar-toggle">Menu</button>
-                    <button class="btn btn-primary btn-sm">New Booking</button>
+                </div>
+                <div class="header-row bottom-row">
+                    <h2>Reservations</h2>
+                    <div class="actions">
+                        <button class="btn btn-primary btn-sm">New Booking</button>
+                    </div>
                 </div>
             </header>
 
             <div class="container" style="padding: 0;">
                 <div class="card"
-                    style="background: var(--color-bg-card); border-radius: var(--radius-md); border: 1px solid var(--color-border); overflow: hidden;">
+                    style="background: var(--color-bg-card); border-radius: var(--radius-md); border: 1px solid var(--color-border); overflow-x: auto;">
                     <table style="width: 100%; border-collapse: collapse;">
                         <thead style="background: var(--color-bg-alt); border-bottom: 1px solid rgba(0,0,0,0.1);">
                             <tr>

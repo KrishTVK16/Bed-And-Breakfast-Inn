@@ -17,30 +17,7 @@ themeToggleBtns.forEach(btn => {
     });
 });
 
-// 2. RTL TOGGLE LOGIC
-const rtlToggleBtns = document.querySelectorAll('.rtl-toggle-btn'); // Desktop & Mobile if added
-// Check Local Storage
-const savedDir = localStorage.getItem('dir');
-if (savedDir) {
-    htmlElement.setAttribute('dir', savedDir);
-    updateRTLButtons(savedDir);
-}
 
-function updateRTLButtons(dir) {
-    rtlToggleBtns.forEach(btn => {
-        btn.textContent = dir === 'rtl' ? 'LTR' : 'RTL';
-    });
-}
-
-rtlToggleBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const currentDir = htmlElement.getAttribute('dir');
-        const newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
-        htmlElement.setAttribute('dir', newDir);
-        localStorage.setItem('dir', newDir);
-        updateRTLButtons(newDir);
-    });
-});
 
 
 // 3. MOBILE MENU LOGIC

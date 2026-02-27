@@ -1,6 +1,6 @@
 
 export const createHeader = () => {
-    return `
+  return `
     <header class="public-header">
       <div class="container public-header-content">
         <a href="/" class="brand-logo">
@@ -17,6 +17,7 @@ export const createHeader = () => {
              <a href="/rooms" class="nav-link">Rooms</a>
              <a href="/amenities" class="nav-link">Amenities</a>
              <a href="/contact" class="nav-link">Contact</a>
+             <a href="/admin/index.html" class="nav-link">Admin Dashboard</a>
           </nav>
         </div>
 
@@ -27,7 +28,7 @@ export const createHeader = () => {
            </button>
 
            <div class="auth-btn-group hidden-on-mobile">
-             <a href="/login" class="btn btn-secondary">Login</a>
+
              <a href="/signup" class="btn btn-primary">Sign Up</a>
            </div>
 
@@ -48,7 +49,7 @@ export const createHeader = () => {
                <!-- Theme toggle goes first on mobile -->
                <button class="btn btn-secondary w-full mobile-theme-toggle">Switch Theme</button>
             </div>
-             <a href="/login" class="btn btn-secondary">Login</a>
+
              <a href="/signup" class="btn btn-primary">Sign Up</a>
              <hr style="opacity:0.1; margin:1rem 0;">
              <a href="/" class="nav-link">Home</a>
@@ -62,17 +63,17 @@ export const createHeader = () => {
 };
 
 export const initHeaderListeners = () => {
-    // Mobile Menu Logic
-    const menuBtn = document.querySelector('.menu-toggle');
-    const closeBtn = document.querySelector('.close-menu');
-    const mobileMenu = document.getElementById('mobile-menu');
+  // Mobile Menu Logic
+  const menuBtn = document.querySelector('.menu-toggle');
+  const closeBtn = document.querySelector('.close-menu');
+  const mobileMenu = document.getElementById('mobile-menu');
 
-    if (menuBtn && mobileMenu) {
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.add('open');
-        });
-        closeBtn.addEventListener('click', () => {
-            mobileMenu.classList.remove('open');
-        });
-    }
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+    });
+    closeBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+    });
+  }
 };

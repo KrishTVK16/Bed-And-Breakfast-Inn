@@ -42,6 +42,23 @@
             .split-image {
                 height: 400px;
             }
+
+            .seasonal-offer-card {
+                grid-template-columns: 1fr !important;
+            }
+
+            .seasonal-offer-image {
+                height: 300px;
+                order: 2;
+            }
+
+            .seasonal-offer-content {
+                order: 1;
+            }
+
+            .journal-grid {
+                grid-template-columns: 1fr !important;
+            }
         }
     </style>
 </head>
@@ -94,13 +111,10 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-                <button class="btn btn-secondary btn-sm rtl-toggle-btn" aria-label="Toggle RTL">
-                    RTL
-                </button>
+
 
                 <div class="auth-btn-group hidden-on-mobile">
                     <a href="admin/index.html" class="btn btn-secondary btn-sm">Admin</a>
-                    <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
                     <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
                 </div>
 
@@ -123,10 +137,11 @@
                 <a href="amenities.html" class="nav-link">Amenities</a>
                 <a href="gallery.html" class="nav-link">Gallery</a>
                 <a href="contact.html" class="nav-link">Contact Us</a>
+                <a href="admin/index.html" class="btn btn-secondary w-full">Admin</a>
             </nav>
 
             <div class="mobile-auth-section">
-                <a href="login.html" class="btn btn-secondary w-full">Login</a>
+
                 <a href="signup.html" class="btn btn-primary w-full">Sign Up</a>
             </div>
 
@@ -140,7 +155,7 @@
                 </div>
                 <div class="mobile-theme-rtl-bar">
                     <button class="btn btn-secondary mobile-theme-toggle" aria-label="Toggle Theme">Theme</button>
-                    <button class="btn btn-secondary rtl-toggle-btn" aria-label="Toggle RTL">RTL</button>
+
                 </div>
             </div>
         </div>
@@ -235,10 +250,10 @@
         </section>
 
         <!-- SECTION 5: SEASONAL OFFER -->
-        <section class="container" style="margin-bottom: var(--spacing-2xl);">
-            <div
+        <section class="container" style="margin-bottom: var(--spacing-2xl); padding: 0;">
+            <div class="seasonal-offer-card"
                 style="background: var(--color-secondary-light); overflow: hidden; border-radius: var(--radius-lg); display: grid; grid-template-columns: 1fr 1fr;">
-                <div
+                <div class="seasonal-offer-content"
                     style="padding: var(--spacing-2xl); display: flex; flex-direction: column; justify-content: center; text-align: center; align-items: center;">
                     <span style="color: var(--color-accent); font-weight: 700; letter-spacing: 2px;">LIMITED TIME</span>
                     <h2 style="margin: var(--spacing-sm) 0;">Spring Retreat Package</h2>
@@ -246,7 +261,7 @@
                         credit. Valid through May.</p>
                     <a href="rooms.html" class="btn btn-primary">View Offer</a>
                 </div>
-                <div
+                <div class="seasonal-offer-image"
                     style="background-image: url('public/images/cider-mill.jpg'); background-size: cover; background-position: center;">
                 </div>
             </div>
@@ -255,7 +270,8 @@
         <!-- SECTION 6: LATEST JOURNAL -->
         <section class="container" style="padding-bottom: var(--spacing-2xl); text-align: center;">
             <h2 style="margin-bottom: var(--spacing-lg);">The Journal</h2>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-lg);">
+            <div class="journal-grid"
+                style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-lg);">
                 <div>
                     <div
                         style="height: 200px; background-image: url('public/images/mirror-lake.jpg'); background-size: cover; background-position: center; margin-bottom: var(--spacing-sm);">

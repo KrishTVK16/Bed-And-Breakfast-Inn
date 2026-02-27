@@ -25,6 +25,7 @@
                     <img src="../public/images/logo.svg" alt="Bed & Breakfast Inn Logo">
                 </a>
             </div>
+            <button class="close-sidebar btn btn-primary btn-sm" id="close-sidebar">&times;</button>
 
             <nav class="admin-nav">
                 <a href="index.html" class="admin-nav-link active">
@@ -62,9 +63,12 @@
         <!-- MAIN CONTENT -->
         <main class="admin-main">
             <header class="admin-header">
+                <a href="../index.html" class="admin-mobile-logo">
+                    <img src="../public/images/logo.svg" alt="Bed & Breakfast Inn Logo" style="height: 30px;">
+                </a>
                 <h2>Dashboard</h2>
                 <div class="actions">
-                    <button class="btn btn-secondary btn-sm" id="admin-menu-toggle">Menu</button>
+                    <button class="btn btn-secondary btn-sm" id="sidebar-toggle">Menu</button>
                     <button class="btn btn-primary btn-sm">New Booking</button>
                 </div>
             </header>
@@ -131,6 +135,8 @@
 
         </main>
     </div>
+
+    <div class="admin-overlay" id="admin-overlay"></div>
 
     <!-- JS -->
     <script src="../js/script.js"></script>

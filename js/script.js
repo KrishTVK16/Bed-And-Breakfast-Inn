@@ -47,6 +47,7 @@ if (menuToggle && closeMenu && mobileMenu) {
 
 // 4. ADMIN SIDEBAR TOGGLE
 const sidebarToggle = document.getElementById('sidebar-toggle');
+const closeSidebar = document.getElementById('close-sidebar');
 const adminSidebar = document.querySelector('.admin-sidebar');
 const adminOverlay = document.querySelector('.admin-overlay');
 
@@ -58,6 +59,10 @@ if (sidebarToggle && adminSidebar && adminOverlay) {
 
     sidebarToggle.addEventListener('click', toggleSidebar);
     adminOverlay.addEventListener('click', toggleSidebar);
+
+    if (closeSidebar) {
+        closeSidebar.addEventListener('click', toggleSidebar);
+    }
 }
 
 // 5. SCROLL TO TOP ON REFRESH & FLOATING BUTTON

@@ -207,7 +207,12 @@
     display: none;
 }
 
-@media (max-width: 768px) {
+.close-sidebar {
+    display: none !important;
+    /* Force hide on desktop */
+}
+
+@media (max-width: 1100px) {
     #sidebar-toggle {
         display: block;
     }
@@ -235,7 +240,8 @@
     }
 
     .close-sidebar {
-        display: flex;
+        display: flex !important;
+        /* Force show on mobile/tablet */
         align-items: center;
         justify-content: center;
         width: 36px;
@@ -253,10 +259,6 @@
         z-index: 1100;
         position: relative;
     }
-}
-
-.close-sidebar {
-    display: none;
 }
 
 /* Admin Overlay for Mobile */
@@ -284,7 +286,7 @@
     height: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     .admin-header h2 {
         display: block;
         font-size: 1.2rem;
